@@ -39,7 +39,8 @@ gaat met de technische opdrachten voor je jouw tijd besteed aan styling.
 
 Je zult in deze opdracht meerdere helperfuncties gaan schrijven die we gaan gebruiken om de juiste informatie op
 het dashboard weer te geven. Je gebruikt hier de data uit de `inventory`-array voor. Deze vind je in de `constants`-map.
-_Tip:_ maak voor iedere helperfunctie een apart bestand en vergeet deze niet aan te roepen in `App.jsx`, anders blijft de console leeg!
+_Tip:_ maak voor iedere helperfunctie een apart bestand en vergeet deze niet aan te roepen in `App.jsx`, anders blijft
+de console leeg!
 
 * **Opdracht 1a:** Hoeveel tv's zijn er al verkocht? Schrijf een helperfunctie dat dit berekent. Log de uitkomst in de
   console.
@@ -86,42 +87,76 @@ heeft (`[43, 50, 55, 58]`) wordt de output `43 inch (109 cm) | 50 inch (127 cm) 
 
 * **Opdracht 2e:** gebruik de iconen uit de `assets`-map om, op basis van de informatie uit het `bestSellingTv`-object,
   weer te geven welke toepassingen aanwezig zijn op de tv. Doe dit voor nu nog even door de informatie zelf, handmatig
-  uit te typen:
+  uit te typen (_hardcoded_).
 
 ```shell
 [check-icon] wifi [not-icon] speech [check-icon] hdr [check-icon] bluetooth [not-icon] ambilight
 ```
 
+* **Opdracht 2f:** Maak drie knoppen onderaan de pagina met daarop: 'Meest verkocht eerst', 'Goedkoopste eerst' en '
+  Meest geschikt voor sport eerst'. Wanneer een knop wordt aangeklikt, moet de button-tekst in de console gelogd
+  worden. _Tip:_ functies die worden uitgevoerd op basis van een event, declareer je altijd in het component zelf: dit
+  zijn geen helpers.
+
 ## Deel 2
 
-### Opdracht 1
+### Opdracht 1 - Oefenen met array methodes
 
-* **Opdracht 1a:** Gebruik een array-methode om een array te maken met alle tv-type namen. Log de uitkomst in de
+Voordat we array methodes gaan toepassen in React, is het belangrijk om nog even te oefenen met deze methodes in 'plain'
+JavaScript. Maak de volgende opdrachten daarom
+in het `inventory.js` bestand, of maak zelf een eigen oefen-bestandje in diezelfde map aan die de `inventory` array
+importeert. Je hoeft hiervoor geen functies te maken. Log de uitkomsten telkens direct in de console.
+
+* **Opdracht 1a:** Gebruik een array-methode om een array te maken met daarin alle tv-type namen. Log de uitkomst in de
   console.
-* **Opdracht 1b:** Gebruik een array-methode om alle tv's te verzamelen (de hele objecten) die volledig uitverkocht
+* **Opdracht 1b:** Gebruik een array-methode om alle informatie te verzamelen van de tv's die volledig uitverkocht
   zijn. Log de uitkomst in de console.
-* **Opdracht 1c:** Gebruik een array-methode om alle tv's te verzamelen (de hele objecten) die over AmbiLight
-  beschikken. Log de uitkomst in de console.
-* **Opdracht 1d:** Schrijf een functie die alle tv's van laagste naar hoogste prijs sorteert. Log de uitkomst in de
-  console.
+* **Opdracht 1c:** Gebruik een array-methode om alle informatie te verzamelen van de tv's die beschikbaar zijn in
+  schermgroottes van 65 inch en groter.
+* **Opdracht 1d:** Gebruik een array-methode om de informatie van het tv-type 'NH3216SMART' op te halen.
+* **Opdracht 1e (uitdaging):** Gebruik een array-methode om een lijst te maken van naam- en tv-types die geschikt zijn
+  voor sport-kijkers (een verversingssnelheid van 100Hz of hoger). Log de uitkomst in de console.
+* **Opdracht 1f (uitdaging):** Gebruik een array-methode om alle informatie te verzamelen van de tv's die over
+  ambilight beschikken. Log de uitkomst in de console.
 
-**Opdracht 4e:** Maak een herbruikbare functie die de informatie van alle tv's weergeeft op de pagina. Gebruik hiervoor
-de map-methode in combinatie met de functies die je hebt gemaakt in opdracht 4a, 4b en 4c.
+### Opdracht 2 - Array methoden in de UI
 
-* **Opdracht 3a:** Gebruik een array-methode om alle tv merken (zoals Philips, NIKKEI, etc.) in een lijst op de pagina
-  weer te geven. Zorg ervoor dat dit ook zou werken als we 200 tv's in onze array zouden hebben staan. Dat er dubbele
-  namen in zitten, is niet erg.
-* **Opdracht 3b:** Schrijf de code uit 3a om naar een functie die een array met tv-objecten verwacht. Het is handig om
-  onze scripts als functies op te zetten, zodat we ze gemakkelijk kunnen hergebruiken. Tip: vergeet deze functie
-  -declaratie niet aan te roepen!
+* **Opdracht 2a:** Gebruik een array-methode om alle tv merken (zoals Philips, NIKKEI, etc.) in een lijst op de pagina
+  weer te geven. Dit geeft het personeel een duidelijk overzicht van wat zij verkopen. Dat er dubbele merknamen in
+  komen, is niet erg.
 
-* **Opdracht 4e:** Gebruik een ternary-operator om alle opties weer te geven met een - of check.
-* **Opdracht 4e:** Wanneer een tv uitverkocht is, willen we een 'sold-out' afbeelding bij de tv weergeven. Bedenk zelf
-  hoe je dit het best kunt aanpakken.
+* **Opdracht 2b:** Gebruik een array-methode om alle tv's van Tech It Easy weer te geven in hetzelfde format als de best
+  verkochte tv. Gebruik hiervoor
+  ook de helperfuncties die je hebt gemaakt tijdens deel 1, maar sla de opties (zoals bluetooth, wifi, etc.) nog even
+  over.
 
-Maak drie knoppen op de pagina: Sorteer op prijs, AmbiLight TV's en Uitverkochte exemplaren. Gebruik de code die je in
-opdracht 1b, 1c en 1d hebt gemaakt en schrijf dit om naar functies zodat je ze kunt aanroepen op het moment dat de
-buttons geklikt worden. Zorg ervoor dat de functies de uitkomsten in de de console loggen als de gebruiker op de
-bijbehorende knop klikt. Tip: lees hiervoor paragraaf 7.4 op EdHub eens door! Zorg er nu voor, in plaats van dat de
-uitkomsten in de console worden gelogd, dat de uitkomsten worden meegegeven aan jouw functie uit 4e zodat de resultaten
-daadwerkelijk op de pagina weergegeven worden!
+* **Opdracht 2c:** Gebruik opnieuw een array-methode om voor iedere tv alle optie-namen (zonder iconen) weer te geven in
+  een lijst.
+
+* **Opdracht 2d:** Voeg nu de iconen toe door gebruik te maken van een beslisboom binnen de methode. Wanneer de waarde
+  van de optie `true` is, willen we het check-icoon weergeven en wanneer de waarde van de optie `false` is, het
+  minus-icoon.
+
+### Opdracht 3 - Sorteren maar!
+
+* **Opdracht 3a:** Zorg ervoor dat wanneer een gebruiker op de 'Meest verkocht eerst'-knop klikt, de tv's worden
+  gesorteert op aantal verkochte items van hoog naar laag.
+* **Opdracht 3b:** Zorg ervoor dat wanneer een gebruiker op de 'Goedkoopste eerst'-knop klikt, de tv's worden gesorteert
+  op prijs van laag naar hoog.
+* **Opdracht 3c:** Zorg ervoor dat wanneer een gebruiker op 'Meest geschikt voor sport eerst'-knop klikt, de tv's worden
+  gesorteert op verversingssnelheid van hoog naar laag.
+
+### Bonus
+
+* **Opdracht 1:** Maak nog een extra knop met daarop 'Grootste schermgroottes eerst'. Wanneer de gebruiker op deze knop
+  klikt, worden de tv's gesorteert op basis van hun grootste schermgrootte.
+* **Opdracht 2:** Sommige tv's zijn al uitverkocht. Om te voorkomen dat de medewerkers van Tech It Easy deze producten
+  nog proberen te verkopen, willen we die tv's voorzien van een 'uitverkocht'-plaatje. Om de afbeelding alleen te laten
+  zien als de conditie waar is, zul je de logica-operator `&&` moeten gebruiken:
+
+```javascript
+conditie && 'element dat weergegeven moet worden als TRUE'
+```
+
+Voor de `?` plaats je de conditie die getoetst wordt (is de tv uitverkocht?). Als de conditie waar is, toon je het
+plaatje door dit element achter de `&&` te zetten (zonder '').

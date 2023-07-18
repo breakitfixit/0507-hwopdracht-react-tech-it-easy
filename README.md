@@ -124,9 +124,9 @@ Log de uitkomsten telkens direct in de console.
 * **Opdracht 1c:** Gebruik een array-methode om alle informatie te verzamelen van de tv's die beschikbaar zijn in
   schermgroottes van 65 inch en groter.
 * **Opdracht 1d:** Gebruik een array-methode om de informatie van het tv-type 'NH3216SMART' op te halen.
-* **Opdracht 1e (uitdaging):** Gebruik een array-methode om een lijst te maken van naam- en tv-types die geschikt zijn
+* **Opdracht 1e:** Gebruik een array-methode om een lijst te maken van naam- en tv-types die geschikt zijn
   voor sport-kijkers (een verversingssnelheid van 100Hz of hoger). Log de uitkomst in de console.
-* **Opdracht 1f (uitdaging):** Gebruik een array-methode om alle informatie te verzamelen van de tv's die over
+* **Opdracht 1f (uitdaging):** Gebruik array-methoden om alle informatie te verzamelen van de tv's die over
   ambilight beschikken. Log de uitkomst in de console.
 
 ### Opdracht 2 - Array methoden in de UI
@@ -165,7 +165,7 @@ Log de uitkomsten telkens direct in de console.
   zien als de conditie waar is, zul je de logica-operator `&&` moeten gebruiken:
 
 ```javascript
-conditie && 'element dat weergegeven moet worden als TRUE'
+conditie && <element dat weergegeven moet worden als TRUE>
 ```
 
 Voor de `?` plaats je de conditie die getoetst wordt (is de tv uitverkocht?). Als de conditie waar is, toon je het

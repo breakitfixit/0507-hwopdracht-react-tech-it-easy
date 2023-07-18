@@ -1,3 +1,41 @@
+// BEST VERKOPENDE TV
+export const bestSellingTv = {
+    type: 'UHD 55AU7040',
+    name: 'Crystal',
+    brand: 'Samsung',
+    price: 549,
+    availableSizes: [43, 50, 55, 65],
+    refreshRate: 50,
+    screenType: 'LED-LCD',
+    screenQuality: 'Ultra HD/4K',
+    smartTv: true,
+    sourceImg: 'https://image.coolblue.nl/max/500x500/products/1786196',
+    options: [
+        {
+            name: "wifi",
+            applicable: true
+        },
+        {
+            name: "speech",
+            applicable: false
+        },
+        {
+            name: "hdr",
+            applicable: true
+        },
+        {
+            name: "bluetooth",
+            applicable: true
+        },
+        {
+            name: "ambiLight",
+            applicable: false
+        }
+    ],
+    originalStock: 52,
+    sold: 17,
+}
+
 // STATISCHE VOORRAAD TV'S
 export const inventory = [
     {
@@ -10,13 +48,29 @@ export const inventory = [
         screenType: 'LED',
         screenQuality: 'Ultra HD/4K',
         smartTv: true,
-        options: {
-            wifi: true,
-            speech: false,
-            hdr: true,
-            bluetooth: false,
-            ambiLight: false,
-        },
+        sourceImg: 'https://media.s-bol.com/71r1kjwlLkWO/1200x793.jpg',
+        options: [
+            {
+                name: "wifi",
+                applicable: true,
+            },
+            {
+                name: "speech",
+                applicable: false,
+            },
+            {
+                name: "hdr",
+                applicable: true,
+            },
+            {
+                name: "bluetooth",
+                applicable: false,
+            },
+            {
+                name: "ambiLight",
+                applicable: false,
+            }
+        ],
         originalStock: 23,
         sold: 2,
     },
@@ -30,13 +84,29 @@ export const inventory = [
         screenType: 'LED',
         screenQuality: 'HD ready',
         smartTv: true,
-        options: {
-            wifi: true,
-            speech: false,
-            hdr: false,
-            bluetooth: false,
-            ambiLight: false,
-        },
+        sourceImg: 'https://media.s-bol.com/NXrQRlwvDMkL/08R4V33/1200x764.jpg',
+        options: [
+            {
+                name: "wifi",
+                applicable: true,
+            },
+            {
+                name: "speech",
+                applicable: false,
+            },
+            {
+                name: "hdr",
+                applicable: false,
+            },
+            {
+                name: "bluetooth",
+                applicable: false,
+            },
+            {
+                name: "ambiLight",
+                applicable: false,
+            }
+        ],
         originalStock: 4,
         sold: 4,
     },
@@ -50,13 +120,29 @@ export const inventory = [
         screenType: 'QLED',
         screenQuality: 'Ultra HD/4K',
         smartTv: true,
-        options: {
-            wifi: true,
-            speech: true,
-            hdr: true,
-            bluetooth: true,
-            ambiLight: false,
-        },
+        sourceImg: 'https://media.s-bol.com/B9n73k76VG2N/vQYEKNn/1200x734.jpg',
+        options:     [
+            {
+                name: "wifi",
+                applicable: true,
+            },
+            {
+                name: "speech",
+                applicable: true,
+            },
+            {
+                name: "hdr",
+                applicable: true,
+            },
+            {
+                name: "bluetooth",
+                applicable: true,
+            },
+            {
+                name: "ambiLight",
+                applicable: false,
+            }
+        ],
         originalStock: 7,
         sold: 0,
     },
@@ -69,14 +155,30 @@ export const inventory = [
         refreshRate: 60,
         screenType: 'LCD',
         screenQuality: 'Ultra HD/4K',
+        sourceImg: 'https://media.s-bol.com/ROVXLp4q9joq/1200x751.jpg',
         smartTv: true,
-        options: {
-            wifi: true,
-            speech: true,
-            hdr: true,
-            bluetooth: true,
-            ambiLight: false,
-        },
+        options:     [
+            {
+                name: "wifi",
+                applicable: true,
+            },
+            {
+                name: "speech",
+                applicable: true,
+            },
+            {
+                name: "hdr",
+                applicable: true,
+            },
+            {
+                name: "bluetooth",
+                applicable: true,
+            },
+            {
+                name: "ambiLight",
+                applicable: false,
+            }
+        ],
         originalStock: 5,
         sold: 5,
     },
@@ -90,13 +192,29 @@ export const inventory = [
         screenType: 'LED',
         screenQuality: 'Ultra HD/4K',
         smartTv: true,
-        options: {
-            wifi: true,
-            speech: true,
-            hdr: true,
-            bluetooth: true,
-            ambiLight: true,
-        },
+        sourceImg: 'https://media.s-bol.com/BPwRO1oZO32W/1200x721.jpg',
+        options: [
+            {
+                name: "wifi",
+                applicable: true,
+            },
+            {
+                name: "speech",
+                applicable: true,
+            },
+            {
+                name: "hdr",
+                applicable: true,
+            },
+            {
+                name: "bluetooth",
+                applicable: true,
+            },
+            {
+                name: "ambiLight",
+                applicable: true,
+            }
+        ],
         originalStock: 8,
         sold: 3,
     },
@@ -110,13 +228,29 @@ export const inventory = [
         screenType: 'LED',
         screenQuality: 'Ultra HD/4K',
         smartTv: true,
-        options: {
-            wifi: true,
-            speech: false,
-            hdr: true,
-            bluetooth: false,
-            ambiLight: true,
-        },
+        sourceImg: 'https://media.s-bol.com/wKJvXVlmPD7z/1200x702.jpg',
+        options: [
+            {
+                name: "wifi",
+                applicable: true,
+            },
+            {
+                name: "speech",
+                applicable: false,
+            },
+            {
+                name: "hdr",
+                applicable: true,
+            },
+            {
+                name: "bluetooth",
+                applicable: false,
+            },
+            {
+                name: "ambiLight",
+                applicable: true,
+            }
+        ],
         originalStock: 6,
         sold: 3,
     },
@@ -130,13 +264,29 @@ export const inventory = [
         screenType: 'LED',
         screenQuality: 'Full HD',
         smartTv: false,
-        options: {
-            wifi: false,
-            speech: false,
-            hdr: false,
-            bluetooth: false,
-            ambiLight: false,
-        },
+        sourceImg: 'https://media.s-bol.com/BLOQPk8ArJWo/1200x840.jpg',
+        options: [
+            {
+                name: "wifi",
+                applicable: false,
+            },
+            {
+                name: "speech",
+                applicable: false,
+            },
+            {
+                name: "hdr",
+                applicable: false,
+            },
+            {
+                name: "bluetooth",
+                applicable: false,
+            },
+            {
+                name: "ambiLight",
+                applicable: false,
+            }
+        ],
         originalStock: 10,
         sold: 8,
     },
@@ -150,14 +300,32 @@ export const inventory = [
         screenType: 'LED',
         screenQuality: 'Full HD',
         smartTv: false,
-        options: {
-            wifi: false,
-            speech: false,
-            hdr: true,
-            bluetooth: false,
-            ambiLight: false,
-        },
+        sourceImg: 'https://media.s-bol.com/ROVXLp4q9joq/1200x751.jpg',
+        options: [
+            {
+                name: "wifi",
+                applicable: false,
+            },
+            {
+                name: "speech",
+                applicable: false,
+            },
+            {
+                name: "hdr",
+                applicable: true,
+            },
+            {
+                name: "bluetooth",
+                applicable: false,
+            },
+            {
+                name: "ambiLight",
+                applicable: false,
+            }
+        ],
         originalStock: 10,
         sold: 8,
     },
 ];
+
+

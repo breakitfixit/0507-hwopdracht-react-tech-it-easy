@@ -12,7 +12,8 @@ gaan dat de voorraad met televisies op dit moment statisch is, maar in de toekom
 ![Tech it easy](./src/assets/tech_it_easy.png)
 
 In `constants/inventory.js` vind je 2 datasets. Eén object met de gegevens van de
-bestverkochte tv bij Tech It Easy en één array met alle 8 tv-objecten. Elk tv-object bevat de volgende informatie:
+bestverkochte tv bij Tech It Easy en één array met 8 objecten (alle tv's die zij verkopen). Elk tv-object bevat de
+volgende informatie:
 
 * `type` - het tv type
 * `brand` - het merk
@@ -43,16 +44,15 @@ het dashboard weer te geven. Je gebruikt hier de data uit de `inventory`-array v
 _Tip:_ maak voor iedere helperfunctie een apart bestand en vergeet deze niet aan te roepen in `App.jsx`, anders blijft
 de console leeg!
 
-* **Opdracht 1a:** Hoeveel tv's zijn er al verkocht? Schrijf een helperfunctie dat dit berekent. Log de uitkomst in de
+* **Opdracht 1a:** Hoeveel tv's zijn er al verkocht? Schrijf een helperfunctie die dit berekent. Log de uitkomst in de
   console.
 * **Opdracht 1b:** Zorg ervoor dat dit aantal in het groen wordt weergegeven op de pagina.
-* **Opdracht 1c:** Hoeveel tv's heeft Tech It Easy ingekocht? Schrijf een helperfunctie dat dit berekent. Log de
-  uitkomst in de
-  console.
+* **Opdracht 1c:** Hoeveel tv's heeft Tech It Easy in totaal ingekocht? Schrijf een helperfunctie die dit berekent. Log
+  de
+  uitkomst in de console.
 * **Opdracht 1d:** Zorg ervoor dat dit aantal in het blauw wordt weergegeven op de pagina.
-  @todo ja?
 * **Opdracht 1e:** Schrijf een helperfunctie die berekent hoeveel tv's er nog verkocht moeten worden. Geef de uitkomst
-  in het rood weer op de pagina.
+  in het rood weer op de pagina. _Tip:_ je kunt een helperfunctie gebruiken in een andere helperfunctie.
 
 ### Opdracht 2 - Productweergave
 
@@ -70,7 +70,7 @@ Samsung UHD 55AU7040 - Crystal
   format `[merk] [type] - [naam]` zoals _Philips 43PUS6504/12 - 4K TV_ of _NIKKEI NH3216SMART - HD smart TV_.
 
 * **Opdracht 2b:** Maak een helperfunctie die de prijs van één tv als parameter verwacht (zoals 379 of 159) teruggeeft
-  in het format €379,- of €159,-.
+  in het format _€379,-_ of _€159,-_.
 
 * **Opdracht 2c:** Maak een helperfunctie die een string genereert voor alle beschikbare schermgroottes van één tv. De
   functie geeft dit terug in het format:
@@ -81,36 +81,41 @@ Samsung UHD 55AU7040 - Crystal
 
 Als een tv maar één schermgrootte heeft (`[32]`) wordt de output `32 inch (81 cm)`. Wanneer een tv vier schermgroottes
 heeft (`[43, 50, 55, 58]`) wordt de output `43 inch (109 cm) | 50 inch (127 cm) |
-58 inch (147 cm)`. Rond altijd af op hele centimeters.
+58 inch (147 cm)`. Rond altijd af op hele centimeters. Test goed of dit werkt met verschillende tv's!
 
-* **Opdracht 2d:** Gebruik jouw helperfuncties om de informatie van het `bestSellingTv`-object, inclusief afbeelding, op
-  de pagina weer te geven.
+* **Opdracht 2d:** Gebruik jouw helperfuncties om de informatie van de bestverkochte tv, inclusief afbeelding, op
+  de pagina weer te geven:
 
-* **Opdracht 2e:** gebruik de iconen uit de `assets`-map om, op basis van de informatie uit het `bestSellingTv`-object,
-  weer te geven welke toepassingen aanwezig zijn op de tv. Doe dit voor nu nog even door de informatie zelf, handmatig
+![screenshot weergave best verkochte tv](./src/assets/screenshots/tech-it-easy-best-seller.png)
+
+* **Opdracht 2e:** gebruik de iconen uit de `assets`-map om weer te geven welke toepassingen aanwezig zijn op deze tv.
+  Doe dit voor nu nog even door de informatie zelf, handmatig
   uit te typen (_hardcoded_).
 
 ```shell
 [check-icon] wifi [not-icon] speech [check-icon] hdr [check-icon] bluetooth [not-icon] ambilight
 ```
 
-* **Opdracht 2f:** Maak drie knoppen onderaan de pagina met daarop: 'Meest verkocht eerst', 'Goedkoopste eerst' en '
-  Meest geschikt voor sport eerst'. Wanneer een knop wordt aangeklikt, moet de button-tekst in de console gelogd
+* **Opdracht 2f:** Maak drie knoppen onderaan de pagina met daarop: 'Meest verkocht eerst', 'Goedkoopste eerst' en
+  'Meest geschikt voor sport eerst'. Wanneer een knop wordt aangeklikt, moet de button-tekst in de console gelogd
   worden. _Tip:_ functies die worden uitgevoerd op basis van een event, declareer je altijd in het component zelf: dit
   zijn geen helpers.
 
 ## Deel 2
-Je gaat verschillende methodes gebruiken om de informatie over alle tv's op een zo efficient mogelijke manier weer te geven. 
-Gebruik de `inventory`-array als input en houdt er rekening mee dat het niet uit moet maken of de array 8 of 800 tv's lang is.
+
+Je gaat verschillende methodes gebruiken om de informatie over alle tv's op een zo efficient mogelijke manier weer te
+geven.
+Gebruik de `inventory`-array als input en houdt er rekening mee dat het niet uit moet maken of de array 8 of 800 tv's
+lang is.
 
 ![screenshot deel 1](./src/assets/screenshots/tech-it-easy-dashboard-deel-2.png)
 
 ### Opdracht 1 - Oefenen met array methodes
 
 Voordat we array methodes gaan toepassen in React, is het belangrijk om nog even te oefenen met deze methodes in 'plain'
-JavaScript. Maak de volgende opdrachten daarom
-in het `inventory.js` bestand, of maak zelf een eigen oefen-bestandje in diezelfde map aan die de `inventory` array
-importeert. Je hoeft hiervoor geen functies te maken. Log de uitkomsten telkens direct in de console.
+JavaScript. Maak de volgende opdrachten daarom in het `inventory.js` bestand, of maak zelf een eigen oefen-bestandje aan
+in diezelfde map. Je kunt de `inventory`-array dan gewoon importeren. Je hoeft hiervoor geen functies te maken. 
+Log de uitkomsten telkens direct in de console.
 
 * **Opdracht 1a:** Gebruik een array-methode om een array te maken met daarin alle tv-type namen. Log de uitkomst in de
   console.

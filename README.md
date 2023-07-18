@@ -11,7 +11,8 @@ gaan dat de voorraad met televisies op dit moment statisch is, maar in de toekom
 
 ![Tech it easy](./src/assets/tech_it_easy.png)
 
-In de `inventory` array (in `constants/inventory.js`) vind je 8 tv-objecten. Elk tv-object bevat de volgende informatie:
+In `constants/inventory.js` vind je 2 datasets. Eén object met de gegevens van de
+bestverkochte tv bij Tech It Easy en één array met alle 8 tv-objecten. Elk tv-object bevat de volgende informatie:
 
 * `type` - het tv type
 * `brand` - het merk
@@ -99,6 +100,10 @@ heeft (`[43, 50, 55, 58]`) wordt de output `43 inch (109 cm) | 50 inch (127 cm) 
   zijn geen helpers.
 
 ## Deel 2
+Je gaat verschillende methodes gebruiken om de informatie over alle tv's op een zo efficient mogelijke manier weer te geven. 
+Gebruik de `inventory`-array als input en houdt er rekening mee dat het niet uit moet maken of de array 8 of 800 tv's lang is.
+
+![screenshot deel 1](./src/assets/screenshots/tech-it-easy-dashboard-deel-2.png)
 
 ### Opdracht 1 - Oefenen met array methodes
 

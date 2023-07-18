@@ -37,7 +37,7 @@ export const bestSellingTv = {
 }
 
 // STATISCHE VOORRAAD TV'S
-export const inventory = [
+export let inventory = [
     {
         type: '43PUS6504/12',
         name: '4K TV',
@@ -223,7 +223,7 @@ export const inventory = [
         name: '4K LED TV',
         brand: 'Philips',
         price: 689,
-        availableSizes: [55],
+        availableSizes: [50, 55],
         refreshRate: 100,
         screenType: 'LED',
         screenQuality: 'Ultra HD/4K',
@@ -295,7 +295,7 @@ export const inventory = [
         name: 'HD TV',
         brand: 'Toshiba',
         price: 161,
-        availableSizes: [32],
+        availableSizes: [32, 43, 50],
         refreshRate: 50,
         screenType: 'LED',
         screenQuality: 'Full HD',

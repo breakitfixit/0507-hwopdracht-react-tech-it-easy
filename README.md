@@ -113,8 +113,7 @@ lang is.
 ### Opdracht 1 - Oefenen met array methodes
 
 Voordat we array methodes gaan toepassen in React, is het belangrijk om nog even te oefenen met deze methodes in 'plain'
-JavaScript. Maak de volgende opdrachten daarom in het `inventory.js` bestand, of maak zelf een eigen oefen-bestandje aan
-in diezelfde map. Je kunt de `inventory`-array dan gewoon importeren. Je hoeft hiervoor geen functies te maken. 
+JavaScript. Maak de volgende opdrachten daarom in het `inventory.js` bestand. Je hoeft hiervoor geen functies te maken. 
 Log de uitkomsten telkens direct in de console.
 
 * **Opdracht 1a:** Gebruik een array-methode om een array te maken met daarin alle tv-type namen. Log de uitkomst in de

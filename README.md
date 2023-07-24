@@ -114,18 +114,20 @@ lang is.
 
 Voordat we array methodes gaan toepassen in React, is het belangrijk om nog even te oefenen met deze methodes in 'plain'
 JavaScript. Maak de volgende opdrachten daarom in het `inventory.js` bestand, of maak zelf een eigen oefen-bestandje aan
-in diezelfde map. Je kunt de `inventory`-array dan gewoon importeren. Je hoeft hiervoor geen functies te maken. 
+in diezelfde map. Je kunt de `inventory`-array dan gewoon importeren. Je hoeft hiervoor geen functies te maken.
 Log de uitkomsten telkens direct in de console.
 
 * **Opdracht 1a:** Gebruik een array-methode om een array te maken met daarin alle tv-type namen. Log de uitkomst in de
   console.
 * **Opdracht 1b:** Gebruik een array-methode om alle informatie te verzamelen van de tv's die volledig uitverkocht
   zijn. Log de uitkomst in de console.
-* **Opdracht 1c:** Gebruik een array-methode om alle informatie te verzamelen van de tv's die beschikbaar zijn in
+* **Opdracht 1c:** Gebruik een array-methode om de informatie van het tv-type 'NH3216SMART' op te halen.
+* **Opdracht 1d:** Gebruik een array-methode om een lijst te maken van de merk- en tv-namen waarbij aangegeven wordt of
+  deze geschikt zijn voor sport-kijkers (een verversingssnelheid van 100Hz of hoger). Doe dit in het
+  format `{ name: 'Toshiba HD TV', suitable: false }`. Log de uitkomst in de console.
+* **Opdracht 1e (uitdaging):** Gebruik array-methoden om alle informatie te verzamelen van de tv's die beschikbaar zijn
+  in
   schermgroottes van 65 inch en groter.
-* **Opdracht 1d:** Gebruik een array-methode om de informatie van het tv-type 'NH3216SMART' op te halen.
-* **Opdracht 1e:** Gebruik een array-methode om een lijst te maken van naam- en tv-types die geschikt zijn
-  voor sport-kijkers (een verversingssnelheid van 100Hz of hoger). Log de uitkomst in de console.
 * **Opdracht 1f (uitdaging):** Gebruik array-methoden om alle informatie te verzamelen van de tv's die over
   ambilight beschikken. Log de uitkomst in de console.
 
@@ -149,12 +151,18 @@ Log de uitkomsten telkens direct in de console.
 
 ### Opdracht 3 - Sorteren maar!
 
-* **Opdracht 3a:** Zorg ervoor dat wanneer een gebruiker op de 'Meest verkocht eerst'-knop klikt, de tv's worden
-  gesorteert op aantal verkochte items van hoog naar laag.
-* **Opdracht 3b:** Zorg ervoor dat wanneer een gebruiker op de 'Goedkoopste eerst'-knop klikt, de tv's worden gesorteert
-  op prijs van laag naar hoog.
-* **Opdracht 3c:** Zorg ervoor dat wanneer een gebruiker op 'Meest geschikt voor sport eerst'-knop klikt, de tv's worden
-  gesorteert op verversingssnelheid van hoog naar laag.
+We kunnen de tv's helaas niet op de pagina laten sorteren door op de knoppen te klikken, daar
+hebben we namelijk _State_ voor nodig. Daarom log je de gesorteerde tv's in de console.
+
+* **Opdracht 3a:** Zorg ervoor dat wanneer een gebruiker op de 'Meest verkocht eerst'-knop klikt, de `inventory`-array
+  wordt
+  gesorteerd op aantal verkochte items van hoog naar laag. Log de uitkomst in de console.
+* **Opdracht 3b:** Zorg ervoor dat wanneer een gebruiker op de 'Goedkoopste eerst'-knop klikt, de `inventory`-array
+  wordt gesorteerd
+  op prijs van laag naar hoog. Log de uitkomst in de console.
+* **Opdracht 3c:** Zorg ervoor dat wanneer een gebruiker op 'Meest geschikt voor sport eerst'-knop klikt, de `inventory`
+  -array wordt
+  gesorteerd op verversingssnelheid van hoog naar laag. Log de uitkomst in de console.
 
 ### Bonus
 

@@ -1,11 +1,11 @@
 import {bestSellingTv} from "../../constants/inventory.js";
 
-function BestSelling() {
+function BestSellingDisplayed() {
     return (
         <div className="best-selling">
-            <h2>{bestSellingTv.brand} {bestSellingTv.type} - {bestSellingTv.name}</h2>
+            {bestSellingTv.brand} {bestSellingTv.type} - {bestSellingTv.name}
         </div>
     );
 }
 
-export default BestSelling;
+export default BestSellingDisplayed;

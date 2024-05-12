@@ -4,16 +4,20 @@ import calculateTotalSoldTVs from './helpers/SoldTvs';
 import calculateTotalPurchasedTVs from './helpers/PurchasedTvs.js';
 import ToBeSold from './helpers/tvStockHelpers/ToBeSold.js';
 
+import BestSellingDisplayed from './helpers/productDisplay/BestSelling.jsx';
+import formatPrice from './helpers/PriceFormat.js'
+
 
 function App() {
     const totalSoldTVs = calculateTotalSoldTVs();
     console.log(`Totaal verkochte tv's: ${totalSoldTVs}`);
-
     const totalPurchasedTVs = calculateTotalPurchasedTVs();
     console.log(`Totaal ingekochte tv's: ${totalPurchasedTVs}`);
-
     const remainingStock = ToBeSold(); // Dit gebruikt de geïmporteerde ToBeSold functie
     console.log(`Nog te verkopen tv's: ${remainingStock}`);
+
+    const formattedprice = formatPrice(200)
+
 
     return (
         <main className="App">
@@ -22,9 +26,11 @@ function App() {
             {/*vanwege terugkomende fout &apos; gebruikt ipv ' in tv's*/}
             <h2>Totaal ingekochte tv&apos;s: <span className={"purchased-amount"}>{totalPurchasedTVs}</span></h2>
             <h2>Nog te verkopen tv&apos;s: <span className="remaining-amount">{remainingStock}</span></h2>
+            <BestSellingDisplayed />
+            <formattedprice />
         </main>
     );
-
 }
+
 
 export default App

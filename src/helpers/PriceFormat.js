@@ -1,4 +1,4 @@
-function formatPrice (price) {
+function formatPrice(price) {
     return `€${price},-`;
 }
 

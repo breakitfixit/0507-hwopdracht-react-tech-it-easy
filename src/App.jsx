@@ -4,8 +4,9 @@ import calculateTotalSoldTVs from './helpers/SoldTvs';
 import calculateTotalPurchasedTVs from './helpers/PurchasedTvs.js';
 import ToBeSold from './helpers/tvStockHelpers/ToBeSold.js';
 
+
 import BestSellingDisplayed from './helpers/productDisplay/BestSelling.jsx';
-import formatPrice from './helpers/PriceFormat.js'
+// import formatPrice from './helpers/PriceFormat.js'
 
 
 function App() {
@@ -16,7 +17,8 @@ function App() {
     const remainingStock = ToBeSold(); // Dit gebruikt de geïmporteerde ToBeSold functie
     console.log(`Nog te verkopen tv's: ${remainingStock}`);
 
-    const formattedprice = formatPrice(200)
+    // const Formattedprice = formatPrice(200)
+    // console.log(`De prijs is: ${Formattedprice}`)
 
 
     return (

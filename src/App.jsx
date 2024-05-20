@@ -1,12 +1,13 @@
 // import SoldTVs from './helpers/SoldTvs';
 import './App.css';
-import calculateTotalSoldTVs from './helpers/SoldTvs';
-import calculateTotalPurchasedTVs from './helpers/PurchasedTvs.js';
-import ToBeSold from './helpers/tvStockHelpers/ToBeSold.js';
+import calculateTotalSoldTVs from './helpers/soldTvs.js';
+import calculateTotalPurchasedTVs from './helpers/purchasedTvs.js';
+import ToBeSold from './helpers/tvStockHelpers/toBeSold.js';
 
 
-import BestSellingDisplayed from './helpers/productDisplay/BestSelling.jsx';
-// import formatPrice from './helpers/PriceFormat.js'
+import BestSellingDisplayed from './helpers/productDisplay/bestSelling.jsx';
+import ProductDescriptions from "./helpers/productDescription.jsx";
+
 
 
 function App() {
@@ -30,6 +31,8 @@ function App() {
             <h2>Nog te verkopen tv&apos;s: <span className="remaining-amount">{remainingStock}</span></h2>
             <BestSellingDisplayed />
             <formattedprice />
+            <ProductDescriptions />
+
         </main>
     );
 }

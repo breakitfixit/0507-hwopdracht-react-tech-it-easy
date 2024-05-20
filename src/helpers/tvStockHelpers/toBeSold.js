@@ -1,6 +1,6 @@
 // Importeer inventory data
-import PurchasedTvs from "../PurchasedTvs.js";
-import SoldTvs from "../SoldTvs.js";
+import PurchasedTvs from "../purchasedTvs.js";
+import SoldTvs from "../soldTvs.js";
 
 function ToBeSold() {
     const totalPurchasedTVs = PurchasedTvs();

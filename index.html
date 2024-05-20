@@ -9,5 +9,19 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+
+<!-- Sena check op cross domain request error:
+    <button onclick="clickbtn()">Klik</button>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+      function clickbtn()
+      {
+        $.post('https://api.datavortex.nl/testapp/users/authenticate', {username:'testuser', password:'testpassword'}, function(response){
+          alert("success");
+        });
+      }
+    </script>
+    -->
+
   </body>
 </html>

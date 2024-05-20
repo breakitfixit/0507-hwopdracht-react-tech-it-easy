@@ -12,3 +12,15 @@ body {
   font-family: 'Zen Kaku Gothic New', Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
 }
+
+.sold-amount {
+  color: green;
+}
+
+.purchased-amount {
+  color: cornflowerblue;
+}
+
+.remaining-amount {
+  color: red;
+}
